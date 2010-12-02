@@ -23,7 +23,7 @@ gh
     ... runs git branch -a
 
 Why?
-====
+----
 
 You use Mercurial.
 
@@ -33,7 +33,7 @@ Instead of wasting your time looking up commands in git's excessively verbose
 documentation you can use the commands you're familiar with.
 
 Caveats
-=======
+-------
 
 `gh` runs git commands. It does **not** attempt to parse those commands' output
 and make it look like output from Mercurial.  It's a tool for humans only.
