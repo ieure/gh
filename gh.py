@@ -9,7 +9,7 @@ sys.path.insert(0, BAKER_PATH)
 import baker
 import subprocess
 
-DEBUG = True
+DEBUG = False
 
 def git(*args):
     cmd = map(str, ['git'] + list(args))
