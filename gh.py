@@ -65,6 +65,16 @@ def diff(rev='', change='', index=False, staged=False):
     sys.exit(git(*cmd))
 
 
+@baker.command(
+        params={},
+        shortopts={})
+def branches():
+    '''List all branches.'''
+    cmd = ['branch', '-a']
+
+    sys.exit(git(*cmd))
+
+
 @baker.command
 def revert():
     return
@@ -78,6 +88,7 @@ def commit():
 @baker.command
 def update():
     return
+
 
 
 
