@@ -28,6 +28,7 @@ def abort(msg):
         params={'limit': 'show at most N changesets'},
         shortopts={'limit': 'l'})
 def log(limit=0):
+    '''list changesets'''
     cmd = ['log']
 
     if limit:
@@ -46,6 +47,7 @@ def log(limit=0):
                    'index':  'i',
                    'staged': 's', })
 def diff(rev='', change='', index=False, staged=False):
+    '''show diffs'''
     cmd = ['diff']
 
     if len(filter(None, [rev, change, index, staged])) > 1:
@@ -69,7 +71,7 @@ def diff(rev='', change='', index=False, staged=False):
         params={},
         shortopts={})
 def branches():
-    '''List all branches.'''
+    '''list all branches'''
     cmd = ['branch', '-a']
 
     sys.exit(git(*cmd))
