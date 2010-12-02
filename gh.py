@@ -25,7 +25,7 @@ def abort(msg):
 
 
 @baker.command(
-        params={'limit': 'show at most N changesets'},
+        params={'limit': 'list at most N changesets'},
         shortopts={'limit': 'l'})
 def log(limit=0):
     '''list changesets'''
