@@ -29,6 +29,14 @@ You use Mercurial.
 
 You want to contribute a patch to a project, but it uses git.
 
-Instead of wasting your time reading git's excessively verbose documentation
-you can use the commands you're familiar with.
+Instead of wasting your time looking up commands in git's excessively verbose
+documentation you can use the commands you're familiar with.
 
+Caveats
+=======
+
+`gh` runs git commands. It does **not** attempt to parse those commands' output
+and make it look like output from Mercurial.  It's a tool for humans only.
+
+`gh` is only meant for simple commands -- the ones you'll need 90% of the time.
+To do complicated stuff you'll need to learn git's CLI.
