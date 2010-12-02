@@ -3,6 +3,11 @@ gh
 
 **`gh` is still in its infancy. Don't use it unless you want to contribute.**
 
+Requirements:
+
+* Python 2.6+
+* Git (latest version)
+
 `gh` is a thin wrapper around git to provide a Mercurial-like CLI.
 
     $ cd someprojectthatusesgit
@@ -40,3 +45,10 @@ and make it look like output from Mercurial.  It's a tool for humans only.
 
 `gh` is only meant for simple commands -- the ones you'll need 90% of the time.
 To do complicated stuff you'll need to learn git's CLI.
+
+Contributing
+------------
+
+Fork, send a pull request.
+
+To run the tests you'll need [cram](http://bitheap.org/cram/).
