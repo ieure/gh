@@ -86,21 +86,6 @@ def add():
 
     sys.exit(git(*cmd))
 
-@baker.command
-def revert():
-    return
-
-
-@baker.command
-def commit():
-    return
-
-
-@baker.command
-def update():
-    return
-
-
 
 
 if __name__ == '__main__':
