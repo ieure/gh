@@ -77,6 +77,15 @@ def branches():
     sys.exit(git(*cmd))
 
 
+@baker.command(
+        params={},
+        shortopts={})
+def add():
+    '''mark untracked files to be committed'''
+    cmd = ['add', '-A']
+
+    sys.exit(git(*cmd))
+
 @baker.command
 def revert():
     return

@@ -10,6 +10,7 @@ summary
   
   Available commands:
   
+   add       mark untracked files to be committed
    branches  list all branches
    commit    
    diff      show diffs
@@ -24,6 +25,7 @@ summary
   
   Available commands:
   
+   add       mark untracked files to be committed
    branches  list all branches
    commit    
    diff      show diffs
@@ -38,6 +40,7 @@ summary
   
   Available commands:
   
+   add       mark untracked files to be committed
    branches  list all branches
    commit    
    diff      show diffs
