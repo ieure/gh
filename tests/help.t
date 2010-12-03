@@ -13,6 +13,7 @@ summary
    add       mark untracked files to be committed
    branches  list all branches
    diff      show diffs
+   glog      graph changesets
    log       list changesets
   
   Use "/Users/sjl/src/gh/tests/../gh.py <command> --help" for individual command help.
@@ -25,6 +26,7 @@ summary
    add       mark untracked files to be committed
    branches  list all branches
    diff      show diffs
+   glog      graph changesets
    log       list changesets
   
   Use "/Users/sjl/src/gh/tests/../gh.py <command> --help" for individual command help.
@@ -37,6 +39,7 @@ summary
    add       mark untracked files to be committed
    branches  list all branches
    diff      show diffs
+   glog      graph changesets
    log       list changesets
   
   Use "/Users/sjl/src/gh/tests/../gh.py <command> --help" for individual command help.
@@ -85,3 +88,24 @@ diff
    -s --staged  show the diff of the changes in the index
   
 
+add
+
+  $ $gh help add
+  
+  Usage: /Users/sjl/src/gh/tests/../gh.py add
+  
+  mark untracked files to be committed
+  
+
+glog
+
+  $ $gh help glog
+  
+  Usage: /Users/sjl/src/gh/tests/../gh.py glog
+  
+  graph changesets
+  
+  Options:
+  
+   -l --limit  list at most N changesets
+  

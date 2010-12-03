@@ -36,6 +36,20 @@ def log(limit=0):
 
     sys.exit(git(*cmd))
 
+
+@baker.command(
+        params={'limit': 'list at most N changesets'},
+        shortopts={'limit': 'l'})
+def glog(limit=0):
+    '''graph changesets'''
+    cmd = ['log', '--graph', '--all']
+
+    if limit:
+        cmd.extend(['-%s' % limit])
+
+    sys.exit(git(*cmd))
+
+
 @baker.command(
         params={'rev':    'diff the working dir against a revision',
                 'change': 'show the diff of the change made by a revision',
