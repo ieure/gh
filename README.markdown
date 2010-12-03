@@ -40,6 +40,10 @@ documentation you can use the commands you're familiar with.
 Caveats
 -------
 
+`gh` assumes basic knowledge about git.  It's meant to save you the pain of
+looking up how to do something in git, **not** to save you from learning the
+basics of git!
+
 `gh` runs git commands. It does **not** attempt to parse those commands' output
 and make it look like output from Mercurial.  It's a tool for humans only.
 
