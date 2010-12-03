@@ -29,13 +29,12 @@ def abort(msg):
         shortopts={'limit': 'l'})
 def log(limit=0):
     '''list changesets'''
-    cmd = ['log']
+    cmd = ['log', '--all']
 
     if limit:
         cmd.extend(['-%s' % limit])
 
     sys.exit(git(*cmd))
-
 
 @baker.command(
         params={'rev':    'diff the working dir against a revision',

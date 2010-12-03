@@ -56,3 +56,29 @@ log --limit
   Date:   Mon Jan 1 00:00:00 2007 +0000
   
       1
+
+log should show changesets from all branches
+
+  $ git checkout HEAD^ -b b1
+  Switched to a new branch 'b1'
+  $ echo c3 > f3
+  $ git add .
+  $ git commit -qm 3
+  $ $gh log
+  commit 1b1979a7aa38d58a1a06d2fc49815a950fde6b7e
+  Author: test <test@example.org>
+  Date:   Mon Jan 1 00:00:00 2007 +0000
+  
+      3
+  
+  commit e5f0882e7f596dbda877a82785e0eac604e1b69d
+  Author: test <test@example.org>
+  Date:   Mon Jan 1 00:00:00 2007 +0000
+  
+      2
+  
+  commit 44706c243491b45638cb31ffad4613df5e8f6308
+  Author: test <test@example.org>
+  Date:   Mon Jan 1 00:00:00 2007 +0000
+  
+      1

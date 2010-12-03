@@ -12,11 +12,8 @@ summary
   
    add       mark untracked files to be committed
    branches  list all branches
-   commit    
    diff      show diffs
    log       list changesets
-   revert    
-   update    
   
   Use "/Users/sjl/src/gh/tests/../gh.py <command> --help" for individual command help.
   $ $gh help
@@ -27,11 +24,8 @@ summary
   
    add       mark untracked files to be committed
    branches  list all branches
-   commit    
    diff      show diffs
    log       list changesets
-   revert    
-   update    
   
   Use "/Users/sjl/src/gh/tests/../gh.py <command> --help" for individual command help.
   $ $gh --help
@@ -42,11 +36,8 @@ summary
   
    add       mark untracked files to be committed
    branches  list all branches
-   commit    
    diff      show diffs
    log       list changesets
-   revert    
-   update    
   
   Use "/Users/sjl/src/gh/tests/../gh.py <command> --help" for individual command help.
 
